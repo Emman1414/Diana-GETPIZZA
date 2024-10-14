@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         poppins: "Poppins",
       },
+      backgroundImage: {
+        menu: "linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)),  url('../IMG/menubanner.jpg')",
+      },
     },
   },
   plugins: [],

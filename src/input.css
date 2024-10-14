@@ -75,7 +75,7 @@
     @apply grid grid-cols-2 gap-3;
   }
   .offer__details {
-    @apply hidden;
+    @apply hidden lg:hidden lg:max-w-[50rem] lg:mx-auto;
   }
   .offer__foods {
     @apply flex flex-col gap-4 justify-center items-center text-center py-10 border border-white rounded-xl;
@@ -89,14 +89,10 @@
 
   /* cta */
 
-  .ctaChef img {
-    @apply hidden;
-  }
-
   /* FOOTER */
 
-  .footer__address h2{
-    @apply text-3xl text-black font-bold 
+  .footer__address h2 {
+    @apply text-3xl text-black font-bold;
   }
 
   /* BUTTONS */
@@ -115,4 +111,63 @@
   .btn.readmore {
     @apply border border-primary hover:text-primary hover:bg-white;
   }
+}
+
+/* ITEMS */
+
+.story__item {
+  @apply mb-5 max-w-[35rem] mx-auto;
+}
+
+.story__item h4,
+.story__item i {
+  @apply bg-primary text-white px-3 py-2 font-bold transition-all flex justify-between items-center cursor-pointer;
+}
+
+.story__item i.open {
+  @apply rotate-[900deg] transition-all delay-200;
+}
+
+.story__item p {
+  @apply bg-slate-50 h-auto max-h-0 overflow-hidden transition-all text-justify delay-200;
+}
+
+.story__item p.open {
+  @apply max-h-[50rem] bg-slate-50 p-3 transition-all text-justify delay-200;
+}
+
+.aboutBanner__vid .iframe {
+  @apply h-[300px];
+}
+
+/* FOR MENU */
+
+.menu .offer__details--wrap {
+  @apply grid grid-cols-3 gap-2;
+}
+
+/* MENU TAB TO BE CLICKED*/
+.menu .menu__tab h2,
+.menu__tab ul {
+  @apply cursor-pointer text-blue-800 font-bold hover:text-primary lg:px-[8px] lg:mx-auto lg:pr-[2.5rem];
+}
+
+/* for paragraph */
+
+.reviews p {
+  @apply lg:mx-auto;
+}
+
+/* SLIDER */
+.tns-outer {
+  @apply overflow-hidden max-w-[100%];
+}
+.tns-outer img {
+  @apply w-[30%] mx-auto mb-3 lg:w-[120px];
+}
+.tns-outer small {
+  @apply flex justify-center mt-3;
+}
+.tns-outer button {
+  @apply hidden;
 }

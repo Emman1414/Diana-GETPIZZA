@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
   </head>
   <body>
     <!-- HEADER -->
@@ -21,9 +25,7 @@
           <img class="w-[8rem]" src="/img/LOGO.png" alt="" />
           <nav>
             <ul
-              class="header__nav bg-secondary flex flex-col gap-5 fixed w-40 text-center justify-center 
-              py-5 font-semibold duration-700 top-[6.3rem] right-[-100%] lg:static 
-              lg:bg-transparent lg:flex-row lg:h-auto lg:w-auto lg-py-0"
+              class="header__nav bg-secondary flex flex-col gap-5 fixed w-40 text-center justify-center py-5 font-semibold duration-700 top-[6.3rem] right-[-100%] lg:static lg:bg-transparent lg:flex-row lg:h-auto lg:w-auto lg-py-0"
             >
               <li>
                 <a class="text-black/80 hover:text-primary" href="./home.html"
@@ -31,7 +33,9 @@
                 >
               </li>
               <li>
-                <a class="text-black/80 hover:text-primary" href="">ABOUT</a>
+                <a class="text-black/80 hover:text-primary" href="./about.html"
+                  >ABOUT</a
+                >
               </li>
               <li>
                 <a class="text-black/80 hover:text-primary" href="">MENU</a>
@@ -65,57 +69,39 @@
       </div>
     </section>
 
-    <!-- BANNER -->
+    <!-- BANNER  -->
 
-    <section class="homeBanner pt-36 pb-10 bg-secondary/30 lg:pb-0">
+    <section class="aboutBanner py-10">
       <div class="container">
         <div
-          class="homeBanner__wrapper flex flex-col-reverse gap-5 items-center justify-center lg:flex-row lg:max-w-[60rem] lg:mx-auto"
+          class="aboutBanner__wrapper flex flex-col justify-center items-center lg:flex lg:flex-row lg:gap-[4rem] lg:py-[8rem]"
         >
-          <div class="homeBanner__text">
-            <h1 class="text-5xl font-semibold mb-10">
-              <span class="font-extrabold">HUNGRY?</span> YOU'RE IN THE RIGHT
-              PLACE
-            </h1>
-            <a href="" class="btn bg-primaryy">VIEW OUR MENU</a>
+          <div class="aboutBanner__vid mt-[7rem]">
+            <iframe
+              class="w-[400px] flex justify-center item-center lg:w-[600px]"
+              width="600"
+              height="350"
+              src="https://www.youtube.com/embed/Y6MHE0-CQAs?si=RlFO6G3bjHTHHMPM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
-          <div class="homeBanner__img">
-            <img src="../IMG/banner-home.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- WELCOME -->
-
-    <section class="homeWelcome py-10">
-      <div class="container">
-        <div
-          class="homeWelcome__wrapper flex flex-col items-center justify-center lg:flex-row lg:gap-32 lg:max-w-[60rem] lg:mx-auto"
-        >
-          <div class="homeWelcome__img">
-            <img
-              class="w-72 border-8 border-black rounded-3xl lg:w-full"
-              src="../IMG/3chefs.png"
-              alt=""
-            />
-            <img
-              class="w-72 border-8 border-black rounded-3xl relative bottom-10 left-10"
-              src="../IMG/food.png"
-              alt=""
-            />
-          </div>
-          <div class="homeWelcome__text">
-            <h2 class="text-3xl font-bold mb-5">WELCOME TO GET PIZZA</h2>
-            <h4 class="text-primary font-semibold mb-4">
-              OUR CHEF ARE WORKING 24/7 AND ARE READY TO ACCEPT VISITORS AND AT
-              ANY TIME OF THE DAY NIGHT
-            </h4>
-            <p class="mb-7">
-              We would like to invite to take this opportunity to welcome you at
-              our Pizza House. We are offering a warm, friendly atmosphere to
-              share a meal with family and friends at any time of the day or
-              evening.
+          <div class="aboutBanner__text lg:w-[34rem]">
+            <div class="title w-[355px]">
+              <h2
+                class="text-primary text-[40px] font-bold text-left pt-4 pb-2 lg:w-[27rem]"
+              >
+                SERVING GET PIZZAS BY THE 1985
+              </h2>
+            </div>
+            <p class="text-[13px]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              laboriosam debitis quo ducimus ullam tempora maiores, impedit
+              facilis, earum nostrum amet accusantium. Ut, tenetur. Laboriosam
+              tempora a repellat obcaecati itaque?
             </p>
           </div>
         </div>
@@ -338,11 +324,125 @@
       </div>
     </section>
 
+    <!-- OUR REVIEW -->
+
+    <section class="aboutFeeback py-[5rem]">
+      <div class="container">
+        <div class="title flex justify-center mb-4">
+          <h2 class="text-[30px] font-bold">CLIENTS REVIEW</h2>
+        </div>
+        <div
+          class="aboutFeeback__wrapper flex flex-col justify-center items-center lg:flex-row"
+        >
+          <div class="about__slider">
+            <div
+              class="reviews flex flex-col justify-center items-center gap-7 mb-4"
+            >
+              <img
+                class="w-[80px] rounded-full"
+                src="../IMG/feedback.png"
+                alt="person1"
+              />
+
+              <p class="text-center lg:text-center lg:w-[40rem]">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                pariatur doloremque blanditiis suscipit perspiciatis.
+                Repellendus laboriosam corporis tenetur eveniet fugit."
+              </p>
+              <small>Patrick Greenish</small>
+            </div>
+            <div
+              class="reviews flex flex-col justify-center items-center gap-7 mb-4"
+            >
+              <img
+                class="w-[80px] rounded-full"
+                src="../IMG/feedback2.png"
+                alt="person1"
+              />
+
+              <p class="text-center lg:text-center lg:w-[40rem]">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                pariatur doloremque blanditiis suscipit perspiciatis.
+                Repellendus laboriosam corporis tenetur eveniet fugit."
+              </p>
+              <small>Patrick Greenish</small>
+            </div>
+            <div
+              class="reviews flex flex-col justify-center items-center gap-7 mb-4"
+            >
+              <img
+                class="w-[80px] rounded-full"
+                src="../IMG/feedback3.png"
+                alt="person1"
+              />
+
+              <p class="text-center lg:text-center lg:w-[40rem]">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                pariatur doloremque blanditiis suscipit perspiciatis.
+                Repellendus laboriosam corporis tenetur eveniet fugit."
+              </p>
+              <small>Patrick Greenish</small>
+            </div>
+            <div
+              class="reviews flex flex-col justify-center items-center gap-7 mb-4"
+            >
+              <img
+                class="w-[80px] rounded-full"
+                src="../IMG/feedback4.png"
+                alt="person1"
+              />
+
+              <p class="text-center lg:text-center lg:w-[40rem]">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                pariatur doloremque blanditiis suscipit perspiciatis.
+                Repellendus laboriosam corporis tenetur eveniet fugit."
+              </p>
+              <small>Patrick Greenish</small>
+            </div>
+            <div
+              class="reviews flex flex-col justify-center items-center gap-7 mb-4"
+            >
+              <img
+                class="w-[80px] rounded-full"
+                src="../IMG/feedback5.png"
+                alt="person1"
+              />
+
+              <p class="text-center lg:text-center lg:w-[40rem]">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                pariatur doloremque blanditiis suscipit perspiciatis.
+                Repellendus laboriosam corporis tenetur eveniet fugit."
+              </p>
+              <small>Patrick Greenish</small>
+            </div>
+            <div
+              class="reviews flex flex-col justify-center items-center gap-7 mb-4"
+            >
+              <img
+                class="w-[80px] rounded-full"
+                src="../IMG/feedback6.png"
+                alt="person1"
+              />
+
+              <p class="text-center lg:text-center lg:w-[40rem]">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                pariatur doloremque blanditiis suscipit perspiciatis.
+                Repellendus laboriosam corporis tenetur eveniet fugit."
+              </p>
+              <small>Patrick Greenish</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA -->
 
     <section class="cta py-20 bg-primary lg:pt-5 lg:pb-0">
       <div class="containe">
-        <div class="cta__wrapper flex flex-col items-center justify-center text-center lg:flex-row">
+        <div
+          class="cta__wrapper flex flex-col items-center justify-center text-center lg:flex-row"
+        >
           <div class="ctaChef">
             <img class="hidden lg:block lg:w-96" src="../IMG/chef.png" alt="" />
           </div>
@@ -368,15 +468,73 @@
       </div>
     </section>
 
+    <!-- STORY -->
+
+    <section class="story pt-32 py-10">
+      <div class="container">
+        <h3 class="font-bold mb-10 text-4xl text-center">OUR STORY</h3>
+        <div class="story__wrapper lg:grid lg:grid-cols-2 lg:gap 10 lg:items-center lg-justify-center">
+          <div class="story__content text-justify ">
+            <div class="story__item">
+              <h4>1985 <i class="fa-solid fa-chevron-up"></i></h4>
+              <p>
+                1985 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+                alias omnis officiis soluta quis illo harum, voluptates atque
+                quos iste laboriosam dignissimos ea, eaque nulla totam
+                voluptatem dolor in quo?
+              </p>
+            </div>
+            <div class="story__item">
+              <h4>1990 <i class="fa-solid fa-chevron-up"></i></h4>
+              <p>
+                1990 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+                alias omnis officiis soluta quis illo harum, voluptates atque
+                quos iste laboriosam dignissimos ea, eaque nulla totam
+                voluptatem dolor in quo?
+              </p>
+            </div>
+            <div class="story__item">
+              <h4>2000 <i class="fa-solid fa-chevron-up"></i></h4>
+              <p>
+                2000 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+                alias omnis officiis soluta quis illo harum, voluptates atque
+                quos iste laboriosam dignissimos ea, eaque nulla totam
+                voluptatem dolor in quo?
+              </p>
+            </div>
+            <div class="story__item">
+              <h4>2010 <i class="fa-solid fa-chevron-up"></i></h4>
+              <p>
+                2010 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+                alias omnis officiis soluta quis illo harum, voluptates atque
+                quos iste laboriosam dignissimos ea, eaque nulla totam
+                voluptatem dolor in quo?
+              </p>
+            </div>
+            <div class="story__item">
+              <h4>2021 <i class="fa-solid fa-chevron-up"></i></h4>
+              <p>
+                2021 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+                alias omnis officiis soluta quis illo harum, voluptates atque
+                quos iste laboriosam dignissimos ea, eaque nulla totam
+                voluptatem dolor in quo?
+              </p>
+            </div>
+          </div>
+          <img class="hidden lg:rounded-3xl lg:block lg:h-[30rem]" src="../IMG/meeting.png" alt="" />
+        </div>
+      </div>
+    </section>
+
     <!-- FOOTER -->
 
-    <footer class="footer bg-white py-30">
+    <footer class="footer bg-white py-30 lg:px-[0rem]">
       <div class="container">
-        <div class="footer__logo flex justify-center items-center">
-          <img class="w-[10rem]" src="../IMG/LOGO.png" alt="" />
+        <div class="footer__logo flex justify-center items-center lg:mx-auto">
+          <img class="w-[8rem] " src="../IMG/LOGO.png" alt="" />
         </div>
         <div
-          class="footer__wrapper flex justify-center flex-col items-center text-center py-10 lg:gap-20 lg:flex-row "
+          class="footer__wrapper flex justify-center flex-col items-center text-center py-10 lg:mx-auto lg:gap-20 lg:flex-row"
         >
           <div class="footer__address">
             <h2>ADDRESS</h2>
@@ -402,10 +560,10 @@
         </div>
       </div>
     </footer>
-
-    <!-- SCRIPT -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./js/toggleMenu.js"></script>
     <script src="./js/offerTabs.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/accordion.js"></script>
   </body>
 </html>
