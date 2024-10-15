@@ -797,8 +797,8 @@ p{
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  --tw-shadow: 0 8px 24px -15px rgba(149,157,165,0.2);
-  --tw-shadow-colored: 0 8px 24px -15px var(--tw-shadow-color);
+  --tw-shadow: 0 8px 24px  15px rgba(149,157,165,0.2);
+  --tw-shadow-colored: 0 8px 24px 15px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -903,6 +903,10 @@ p{
   margin-bottom: 1.75rem;
 }
 
+.mt-\[5rem\]{
+  margin-top: 5rem;
+}
+
 .mt-\[7rem\]{
   margin-top: 7rem;
 }
@@ -991,10 +995,6 @@ p{
   justify-content: space-between;
 }
 
-.gap-2{
-  gap: 0.5rem;
-}
-
 .gap-5{
   gap: 1.25rem;
 }
@@ -1013,6 +1013,10 @@ p{
 
 .rounded-full{
   border-radius: 9999px;
+}
+
+.border{
+  border-width: 1px;
 }
 
 .border-8{
@@ -1342,6 +1346,57 @@ p{
   }
 }
 
+.menu__tab h2.active{
+  --tw-text-opacity: 1;
+  color: rgb(178 57 32 / var(--tw-text-opacity));
+}
+
+/* CONTACT */
+
+.contactMe input{
+  width: 5px;
+}
+
+.contactUs form{
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 183 84 / var(--tw-bg-opacity));
+  padding: 2.5rem;
+}
+
+@media (min-width: 1024px){
+  .contactUs form{
+    width: 40vw;
+  }
+}
+
+.contactUs form input, .contactUs textarea{
+  margin: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 1rem;
+  border-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+}
+
+.contactUs textarea{
+  margin-bottom: 1.75rem;
+}
+
+.contactMe{
+  display: flex;
+  justify-content: space-between;
+  gap: 0.25rem;
+}
+
+@media (min-width: 1024px){
+  .contactMe{
+    width: 35.5vw;
+  }
+}
+
 /* for paragraph */
 
 @media (min-width: 1024px){
@@ -1442,6 +1497,10 @@ p{
 
   .lg\:w-full{
     width: 100%;
+  }
+
+  .lg\:w-\[60rem\]{
+    width: 60rem;
   }
 
   .lg\:max-w-\[60rem\]{
